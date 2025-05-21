@@ -1,7 +1,20 @@
+import { Route } from 'react-router';
+import MainLayout from './layout/MainLayout';
+import { Routes } from 'react-router';
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+
 function App() {
 	return (
 		<>
-			<p className="text-4xl font-bold">dfhasbdhfab</p>
+			<MainLayout>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<AboutPage />} />
+					<Route path="/contact" element={<ContactPage />} />
+				</Routes>
+			</MainLayout>
 		</>
 	);
 }
