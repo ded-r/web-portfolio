@@ -1,8 +1,10 @@
 const Footer = () => {
 	return (
-		<footer className="w-full bg-white text-black sticky bottom-0 z-50">
-			<div className="container mx-auto px-4 py-3 flex items-center justify-center">
-				<p>© 2025 Didar Auyesbay. All rights reserved.</p>
+		<footer className="grid grid-cols-12 sticky bottom-0 z-50">
+			<div className="col-start-2 col-span-10">
+				<div className="flex items-center justify-center py-4">
+					<p>© 2025 Didar Auyesbay. All rights reserved.</p>
+				</div>
 			</div>
 		</footer>
 	);

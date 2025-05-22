@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
 	font-family: 'Geist';
 	src: url('/fonts/Geist-Thin.ttf') format('truetype');
